@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sistema de Matricula da Academia</title>
+</head>
+
+<body>
+    <h1>Matrícula</h1>
+    <form name="cadastro" action="" method="">
+        <label for="txtnome">Nome: </label>
+        <input type="text" id="txtnome" name="txtnome" size="67" maxlength="35" required="required" placeholder="Insira seu nome completo" />
+        <label for="txtemail">E-mail: </label>
+        <input type="email" name="txtemail" size="67" maxlength="45" required="required" placeholder="seuemail@exemplo.com" />
+        <label for="teltelefone" style="display: flex;">Telefone: </label>
+        <input type="tel" name="teltelefone" size="67" maxlength="35" placeholder="(XX)XXXXX-XXXX" />
+        <label for="txtendereco">Endereço: </label>
+        <input type="text" name="txtendereco" size="67" maxlength="45" required="required" placeholder="Insira seu endereço" />
+        <label for="selplano">Plano: </label>
+        <select name="selplano" id="selplano" required="required">
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="1">Musculação</option>
+            <option value="2">Crossfit</option>
+            <option value="3">Pilates</option>
+            <option value="4">Yoga</option>
+        </select>
+        <label for="nummeses">Quantidade de Meses: </label>
+        <input type="number" name="nummeses" id="nummeses" max="12" min="1" value="1" required="required">
+        <label for="txtaobjetivo">Objetivo Principal: </label>
+        <textarea name="txtaobjetivo" id="txtaobjetivo" cols="74" rows="10" placeholder="Meu objetivo é..."></textarea>
+        <label for="rdpagamento">Forma de pagamento: </label>
+        <input type="radio" name="rdpagamento" id="rdpagamento" value="1" required="required"/>PIX
+        <input type="radio" name="rdpagamento" id="rdpagamento" value="1" />Débito
+        <input type="radio" name="rdpagamento" id="rdpagamento" value="1" />Crédito
+        <input type="radio" name="rdpagamento" id="rdpagamento" value="1" />Dinheiro
+        <br>
+        <br>
+        <br>
+        <button type="button" id="btncancelar" onclick="alert('Que pena, inscrição cancelada!')">Cancelar</button>
+        <button type="button" id="btnenviar" onclick="alert('Inscrição concluída!')">Cadastrar</button>
+    </form>
+</body>
+</html>
